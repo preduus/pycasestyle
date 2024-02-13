@@ -38,5 +38,7 @@ class SnakeCase(Case):
         snake_case_dict = {}
         for key, value in __dict.items():
             snake_case_key = self.from_string(key)
+            if isinstance(value, dict):
+                value = self.from_dict(value)
             snake_case_dict[snake_case_key] = value
         return snake_case_dict

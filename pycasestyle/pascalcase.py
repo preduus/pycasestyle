@@ -39,5 +39,7 @@ class PascalCase(Case):
         pascal_case_dict = {}
         for key, value in __dict.items():
             pascal_case_key = self.from_string(key)
+            if isinstance(value, dict):
+                value = self.from_dict(value)
             pascal_case_dict[pascal_case_key] = value
         return pascal_case_dict
