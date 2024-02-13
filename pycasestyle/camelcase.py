@@ -39,5 +39,7 @@ class CamelCase(Case):
         camel_case_dict = {}
         for key, value in __dict.items():
             camel_case_key = self.from_string(key)
+            if isinstance(value, dict):
+                value = self.from_dict(value)
             camel_case_dict[camel_case_key] = value
         return camel_case_dict

@@ -38,5 +38,7 @@ class KebabCase(Case):
         kebab_case_dict = {}
         for key, value in __dict.items():
             kebab_case_key = self.from_string(key)
+            if isinstance(value, dict):
+                value = self.from_dict(value)
             kebab_case_dict[kebab_case_key] = value
         return kebab_case_dict
