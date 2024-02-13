@@ -15,7 +15,6 @@ Installation
 To install pycasestyle, you can use pip:
 
 .. code-block:: bash
-
     pip install pycasestyle
 
 Usage
@@ -24,7 +23,6 @@ Usage
 You can import the text formatting styles directly from the pycasestyle module and use them in your code. Here's an example of how to use the text formatting styles:
 
 .. code-block:: python
-
     import pycasestyle
 
     # Converting to camelcase from text
@@ -68,7 +66,6 @@ You need to migrate information from Postgres to Elasticsearch, however, the map
 
 
 .. code-block:: python
-
     import pycasestyle
 
     postgres_contract = {
