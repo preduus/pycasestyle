@@ -12,6 +12,7 @@ setup(
     keywords=['pycasestyle', 'camelcase', 'snakecase', 'pascal case', 'kebab case', 'dict key case', 'string case'],
     description='A simple python lib to convert string and dict keys to camelcase, pascal case, kebab case and snake case.',
     long_description=readme,
+    long_description_content_type="text/markdown",
     author='Pedro Rodrigues',
     author_email='pedrota.rodrigues@gmail.com',
     url='https://github.com/preduus/pycasestyle',
