@@ -86,9 +86,9 @@ You need to migrate information from Postgres to Elasticsearch, however, the map
 Contributing
 ------------
 
-If you encounter any issues or have suggestions for improvement, feel free to open an issue or submit a pull request on the [GitHub repository](https://github.com/preduus/pycasestyle).
+If you encounter any issues or have suggestions for improvement, feel free to open an issue or submit a pull request on the `GitHub repository <https://github.com/preduus/pycasestyle>`.
 
 License
 -------
 
-This project is licensed under the Apache License 2.0 License. See the [LICENSE](LICENSE) file for more details.
+This project is licensed under the Apache License 2.0 License. See the `LICENSE <https://github.com/preduus/pycasestyle/LICENSE>` file for more details.
