@@ -18,6 +18,7 @@ setup(
     url='https://github.com/preduus/pycasestyle',
     py_modules=['pycasestyle'],
     packages=['pycasestyle'],
+    package_dir={'pycasestyle': 'pycasestyle'},
     license='Apache License 2.0',
     zip_safe=False,
     test_suite="tests",
