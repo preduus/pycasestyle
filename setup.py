@@ -17,11 +17,12 @@ setup(
     author_email='pedrota.rodrigues@gmail.com',
     url='https://github.com/preduus/pycasestyle',
     py_modules=['pycasestyle'],
+    packages=['pycasestyle'],
     license='Apache License 2.0',
     zip_safe=False,
     test_suite="tests",
     python_requires='>=3',
-    install_requires=['Unidecode==1.3.8', 'pytest==8.0.0'],
+    install_requires=['Unidecode==1.3.8'],
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
