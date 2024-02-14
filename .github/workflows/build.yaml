@@ -1,4 +1,4 @@
-name: Publish Python 🐍 distributions 📦 to PyPI
+name: Publish Python package 📦 to PyPI
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-n-publish:
-    name: Build and publish Python 🐍 distributions 📦 to PyPI
+    name: Build and publish Python package 📦 to PyPI
     runs-on: ${{ fromJSON('["ubuntu-latest", "self-hosted"]')[github.repository == 'github/docs-internal'] }}
 
     steps:
@@ -29,7 +29,7 @@ jobs:
     - name: Build a binary wheel
       run: >-
         python setup.py sdist bdist_wheel
-    - name: Publish distribution 📦 to PyPI
+    - name: Publish package 📦 to PyPI
       uses: pypa/gh-action-pypi-publish@master
       with:
         password: ${{ secrets.PYPI_API_TOKEN }}

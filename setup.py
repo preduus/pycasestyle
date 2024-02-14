@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding=utf-8
 
-from setuptools import setup
+from setuptools import setup, find_packages
 
 with open('README.rst', 'r', encoding='utf-8') as f:
     readme = f.read()
@@ -17,8 +17,7 @@ setup(
     author_email='pedrota.rodrigues@gmail.com',
     url='https://github.com/preduus/pycasestyle',
     py_modules=['pycasestyle'],
-    packages=['pycasestyle'],
-    package_dir={'pycasestyle': 'pycasestyle'},
+    packages=find_packages(exclude=['contrib', 'docs', 'test', '']),
     license='Apache License 2.0',
     zip_safe=False,
     test_suite="tests",
